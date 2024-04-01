@@ -7,7 +7,7 @@ export const Loader = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setDots((dots) => (dots.length < 3 ? dots + '.' : ''));
-    }, 300);
+    }, 100);
     return () => clearInterval(interval);
   }, []);
 
