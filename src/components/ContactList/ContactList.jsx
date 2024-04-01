@@ -3,10 +3,10 @@ import css from './ContactList.module.css';
 import { useSelector } from 'react-redux';
 
 import Contact from '../Contact/Contact';
-import { selectVisibleContacts } from '../../redux/contactsSlice';
+import { selectFilteredContacts } from '../../redux/contactsSlice';
 
 export const ContactList = () => {
-  const contacts = useSelector(selectVisibleContacts);
+  const contacts = useSelector(selectFilteredContacts);
 
   return (
     <ul className={css.list}>
